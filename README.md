@@ -17,6 +17,13 @@ brew install font-hack-nerd-font
 ### Terminals
 
 * [warp](https://www.warp.dev)
+
+Warp settings:
+
+* Settings > Appearance > Select Nerd Font
+* Settings > Features > Check Honor user's custom prompt (PS1)
+* Settings > Features > Check Open completions menu as you type
+
 * [hyper](https://hyper.is)
 
 ### Prompts / Shells
