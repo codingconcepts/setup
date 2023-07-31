@@ -210,77 +210,69 @@ Starship config (~/.config/starship.toml):
 
 ``` toml
 format = """
-[](#FF9B9B)\
-$username\
-[](bg:#FFD6A5 fg:#FF9B9B)\
-$directory\
-[](fg:#FFD6A5 bg:#FFFEC4)\
+[](#9376E0)\
+$character\
+[](bg:#E893CF fg:#9376E0)\
 $git_branch\
 $git_status\
-[](fg:#FFFEC4 bg:#CBFFA9)\
+[](fg:#E893CF bg:#F3BCC8)\
+$crystal\
 $golang\
 $julia\
 $nodejs\
-[](fg:#CBFFA9 bg:#A5D8FF)\
-$time\
-[ ](fg:#A5D8FF)\
+$terraform\
+$vlang\
+[](fg:#F3BCC8 bg:#F6FFA6)\
+$directory\
+[ ](fg:#F6FFA6)\
 """
 
-# Disable the blank line at the start of the prompt
 add_newline = true
 
-# You can also replace your username with a neat symbol like   or disable this
-# and use the os module below
-[username]
-show_always = true
-style_user = "bg:#FF9B9B"
-style_root = "bg:#FF9B9B"
-format = '[$user ]($style)'
-disabled = false
+[character]
+format = "[⛧ ](bg:#9376E0 fg:#ffffff)"
 
 [directory]
-style = "bg:#FFD6A5"
+style = "bg:#F6FFA6 fg:#444444"
 format = "[ $path ]($style)"
 truncation_length = 1
-truncation_symbol = ".../"
-
-[docker_context]
-symbol = "docker"
-style = "bg:#A5D8FF"
-format = '[ $symbol $context ]($style) $path'
+truncation_symbol = ""
 
 [git_branch]
 symbol = "git"
-style = "bg:#FFFEC4"
-format = '[ $symbol $branch ]($style)'
+style = "bg:#E893CF fg:#444444"
+format = '[ $branch ]($style)'
 
 [git_status]
-style = "bg:#FFFEC4"
+style = "bg:#E893CF fg:#444444"
 staged = '\($count\)($style)'
 format = '[$staged]($style)'
 
+[crystal]
+symbol = "cr"
+style = "bg:#F3BCC8 fg:#444444"
+format = '[ $symbol ($version) ]($style)'
+
 [golang]
 symbol = "go"
-style = "bg:#CBFFA9"
+style = "bg:#F3BCC8 fg:#444444"
 format = '[ $symbol ($version) ]($style)'
 
 [julia]
-symbol = "julia"
-style = "bg:#CBFFA9"
+symbol = "jl"
+style = "bg:#F3BCC8 fg:#444444"
 format = '[ $symbol ($version) ]($style)'
 
 [nodejs]
-symbol = "nodejs"
-style = "bg:#CBFFA9"
+symbol = "node"
+style = "bg:#F3BCC8 fg:#444444"
 format = '[ $symbol ($version) ]($style)'
 
-[cmd_duration]
-min_time = 1_000
-format = " took [$duration]($style)"
+[terraform]
+symbol = "tf"
+format = '[ $symbol ($version) ]($style)'
 
-[time]
-disabled = false
-time_format = "%R"
-style = "bg:#A5D8FF"
-format = '[ $time ]($style)'
+[vlang]
+symbol = 'v'
+format = '[ $symbol ($version) ]($style)'
 ```
