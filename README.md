@@ -209,70 +209,25 @@ eval "$(starship init zsh)"
 Starship config (~/.config/starship.toml):
 
 ``` toml
-format = """
-[](#9376E0)\
-$character\
-[](bg:#E893CF fg:#9376E0)\
-$git_branch\
-$git_status\
-[](fg:#E893CF bg:#F3BCC8)\
-$crystal\
-$golang\
-$julia\
-$nodejs\
-$terraform\
-$vlang\
-[](fg:#F3BCC8 bg:#F6FFA6)\
-$directory\
-[ ](fg:#F6FFA6)\
-"""
-
-add_newline = true
-
-[character]
-format = "[⛧ ](bg:#9376E0 fg:#ffffff)"
+format = """$directory- $git_branch $cmd_duration $line_break $character"""
 
 [directory]
-style = "bg:#F6FFA6 fg:#444444"
-format = "[ $path ]($style)"
+style = "gray"
 truncation_length = 1
-truncation_symbol = ""
+
+[character]
+success_symbol = "[>](#ffc107)"
+error_symbol = "[>](#dc3545)"
 
 [git_branch]
-symbol = "git"
-style = "bg:#E893CF fg:#444444"
-format = '[ $branch ]($style)'
+format = "[$branch]($style)"
+style = "bright-black"
 
-[git_status]
-style = "bg:#E893CF fg:#444444"
-staged = '\($count\)($style)'
-format = '[$staged]($style)'
+[git_state]
+format = '\([$state( $progress_current/$progress_total)]($style)\) '
+style = "bright-black"
 
-[crystal]
-symbol = "cr"
-style = "bg:#F3BCC8 fg:#444444"
-format = '[ $symbol ($version) ]($style)'
-
-[golang]
-symbol = "go"
-style = "bg:#F3BCC8 fg:#444444"
-format = '[ $symbol ($version) ]($style)'
-
-[julia]
-symbol = "jl"
-style = "bg:#F3BCC8 fg:#444444"
-format = '[ $symbol ($version) ]($style)'
-
-[nodejs]
-symbol = "node"
-style = "bg:#F3BCC8 fg:#444444"
-format = '[ $symbol ($version) ]($style)'
-
-[terraform]
-symbol = "tf"
-format = '[ $symbol ($version) ]($style)'
-
-[vlang]
-symbol = 'v'
-format = '[ $symbol ($version) ]($style)'
+[cmd_duration]
+format = "[$duration]($style) "
+style = "yellow"
 ```
