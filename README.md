@@ -3,6 +3,23 @@ Steps for getting my preferred setup onto new machines
 
 ### Tools
 
+* [ctop](https://github.com/bcicen/ctop) - Realtime Docker container metrics
+* [dive](https://github.com/wagoodman/dive) - View the layers in a Docker image
+* [duf](https://github.com/muesli/duf) - View resource utilization
+* [dust](https://github.com/bootandy/dust) - See where all my disk is going
+* [eza](https://eza.rocks) - ls replacement with the following configuration in ~/.zshrc
+
+```
+alias ls='eza'
+alias la='ls -la'
+alias tree='ls -T'
+```
+
+* [hyperfine](https://github.com/sharkdp/hyperfine) - benchmark command line tools (good for comparisons), for example:
+
+```sh
+hyperfine --warmup 3 'ezf' 'another tool'
+```
 
 ### Fonts
 
