@@ -21,6 +21,8 @@ alias tree='ls -T'
 hyperfine --warmup 3 'ezf' 'another tool'
 ```
 
+* [procs](https://github.com/dalance/procs) - a modern alternative to ps
+
 ### Fonts
 
 * [firacode](https://github.com/tonsky/FiraCode)
