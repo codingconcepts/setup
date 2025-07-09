@@ -8,7 +8,8 @@ Steps for getting my preferred setup onto new machines
 * [duf](https://github.com/muesli/duf) - View resource utilization
 * [dust](https://github.com/bootandy/dust) - See where all my disk is going
 * [eza](https://eza.rocks) - ls replacement with the following configuration in ~/.zshrc
-* [yq](https://github.com/mikefarah/yq) does for YAML what jq does for JSON
+* [yq](https://github.com/mikefarah/yq) - Does for YAML what jq does for JSON
+* [gofakeit](https://github.com/brianvoe/gofakeit) and `go install -v github.com/brianvoe/gofakeit/v7/cmd/gofakeit@latest` to install as a CLI
 
 ```
 alias ls='eza'
