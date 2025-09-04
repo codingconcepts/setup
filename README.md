@@ -10,6 +10,7 @@ Steps for getting my preferred setup onto new machines
 * [eza](https://eza.rocks) - ls replacement with the following configuration in ~/.zshrc
 * [yq](https://github.com/mikefarah/yq) - Does for YAML what jq does for JSON
 * [gofakeit](https://github.com/brianvoe/gofakeit) and `go install -v github.com/brianvoe/gofakeit/v7/cmd/gofakeit@latest` to install as a CLI
+* aws copilot - `brew install aws/tap/copilot-cli` - Makes deployments to AWS a breeze
 
 ```
 alias ls='eza'
