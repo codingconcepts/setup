@@ -1,6 +1,11 @@
 # setup
 Steps for getting my preferred setup onto new machines
 
+### Themes
+
+* Monokai Pro (Filter Spectrum)
+* Shades of Purple
+
 ### Tools
 
 * [ctop](https://github.com/bcicen/ctop) - Realtime Docker container metrics
