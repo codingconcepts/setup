@@ -31,6 +31,11 @@ hyperfine --warmup 3 'ezf' 'another tool'
 
 * [procs](https://github.com/dalance/procs) - a modern alternative to ps
 
+### AI tooling
+
+* [Claude Code]
+* [caveman](https://github.com/JuliusBrussee/caveman)
+
 ### Fonts
 
 * [firacode](https://github.com/tonsky/FiraCode)
