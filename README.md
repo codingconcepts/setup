@@ -8,6 +8,7 @@ Steps for getting my preferred setup onto new machines
 
 ### Tools
 
+* [dotenvx](https://dotenvx.com)
 * [ctop](https://github.com/bcicen/ctop) - Realtime Docker container metrics
 * [dive](https://github.com/wagoodman/dive) - View the layers in a Docker image
 * [duf](https://github.com/muesli/duf) - View resource utilization
