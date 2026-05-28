@@ -9,6 +9,20 @@ Steps for getting my preferred setup onto new machines
 ### Tools
 
 * Karabiner Elements - `brew install --cask karabiner-elements`
+
+And apply mapping of ¬ to pipe in ~/.config/karabiner/karabiner.json:
+
+```json
+{
+    "description": "Map ¬ to |",
+    "manipulators": [{
+      "type": "basic",
+      "from": { "key_code": "grave_accent_and_tilde", "modifiers": { "mandatory": ["option"] } },
+      "to": [{ "key_code": "backslash", "modifiers": ["shift"] }]
+    }]
+}
+```
+
 * [dotenvx](https://dotenvx.com) - `brew install dotenvx/brew/dotenvx`
 * [ghostty](https://ghostty.org) - `brew install --cask ghostty`
 * [ctop](https://github.com/bcicen/ctop) - Realtime Docker container metrics
