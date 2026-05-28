@@ -8,6 +8,7 @@ Steps for getting my preferred setup onto new machines
 
 ### Tools
 
+* Karabiner Elements - `brew install --cask karabiner-elements`
 * [dotenvx](https://dotenvx.com) - `brew install dotenvx/brew/dotenvx`
 * [ghostty](https://ghostty.org) - `brew install --cask ghostty`
 * [ctop](https://github.com/bcicen/ctop) - Realtime Docker container metrics
