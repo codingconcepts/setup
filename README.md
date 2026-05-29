@@ -23,6 +23,7 @@ And apply mapping of ¬ to pipe in ~/.config/karabiner/karabiner.json:
 }
 ```
 
+* kubetail - `brew install kubetail`
 * [dotenvx](https://dotenvx.com) - `brew install dotenvx/brew/dotenvx`
 * [ghostty](https://ghostty.org) - `brew install --cask ghostty`
 * [ctop](https://github.com/bcicen/ctop) - Realtime Docker container metrics
