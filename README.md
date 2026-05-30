@@ -23,6 +23,7 @@ And apply mapping of ¬ to pipe in ~/.config/karabiner/karabiner.json:
 }
 ```
 
+* 1Password CLI - `brew install 1password-cli`
 * node - `brew install node`
 * hugo - `brew install hugo`
 * kubetail - `brew install kubetail`
