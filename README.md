@@ -23,6 +23,7 @@ And apply mapping of ¬ to pipe in ~/.config/karabiner/karabiner.json:
 }
 ```
 
+* node - `brew install node`
 * hugo - `brew install hugo`
 * kubetail - `brew install kubetail`
 * [dotenvx](https://dotenvx.com) - `brew install dotenvx/brew/dotenvx`
